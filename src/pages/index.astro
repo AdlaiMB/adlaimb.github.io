@@ -1,5 +1,6 @@
 ---
-import App from '../cra-project/App.jsx';
+import RemodelingNotice from "../components/RemodelingNotice.astro"
+const remodeling = true;
 ---
 
 <!-- TODO: why is it type="svg+xml"? -->
@@ -13,6 +14,12 @@ import App from '../cra-project/App.jsx';
 		<title>Astro</title>
 	</head>
 	<body>
-		<App client:load/>
+		{remodeling ? <RemodelingNotice/> : <h1>Webiste will be here</h1>}
 	</body>
 </html>
+
+<style>
+  * {
+    margin: 0;
+  }
+</style>
