@@ -11,8 +11,8 @@ function App() {
           <li>
             <img
               className="logo-image"
-              src="/icons/logo.png"
-              height="48"
+              src="/favicon.svg"
+              height="50"
               alt="logo"
             />
           </li>
