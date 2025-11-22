@@ -7,7 +7,7 @@ test("correct render of RemodelingNotice component", async () => {
   const result = await container.renderToString(RemodelingNotice);
 
   expect(result).toContain(
-    'img src="/favicon.svg" width="70" height="70" alt="personal logo"'
+    'img src="/logo.svg" width="70" height="70" alt="personal logo"'
   );
   expect(result).toContain("Website under remodeling, come back later.");
 });
