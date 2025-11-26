@@ -1,7 +1,11 @@
 ---
 import Navigation from "./Navigation.astro"
+const imageFilePath = '/Personal-Website/logo.svg';
+const imageAltText = 'personal logo';
+const imageSize = 70;
 ---
 
 <header>
+    <img src={imageFilePath} width={imageSize} height={imageSize} alt={imageAltText} />
     <Navigation />
 </header>
