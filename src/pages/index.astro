@@ -1,9 +1,9 @@
 ---
 import RemodelingNotice from "../components/RemodelingNotice.astro"
-import Header from "../components/Header.astro"
+import PortfolioLayout from "../layouts/PortfolioLayout.astro";
 import Introduction from "../components/Introduction.astro"
 import '../styles/global.css'
-const remodeling = true;
+const remodeling = false;
 ---
 
 <!-- TODO: why is it type="svg+xml"? -->
@@ -17,17 +17,15 @@ const remodeling = true;
 		<title>adlaimb's portfolio</title>
 	</head>
 	<body>
-		<Header />
-		<Introduction />
-		{remodeling ? <RemodelingNotice/> : <h1>Webiste will be here</h1>}
-		<script> 
+		{remodeling ? <RemodelingNotice/> : <PortfolioLayout><Introduction/></PortfolioLayout>}
+		{!remodeling && <script> 
 			import "../scripts/menu.js"
-		</script>
+		</script>}
 	</body>
 </html>
 
 <style>
-  * {
-    margin: 0;
-  }
+	body {
+		margin: 0;
+	}
 </style>
