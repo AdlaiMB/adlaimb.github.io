@@ -1,6 +1,6 @@
 ---
 import RemodelingNotice from "../components/RemodelingNotice.astro"
-import Navigation from "../components/Navigation.astro"
+import Header from "../components/Header.astro"
 import '../styles/global.css'
 const remodeling = true;
 ---
@@ -16,7 +16,7 @@ const remodeling = true;
 		<title>adlaimb's portfolio</title>
 	</head>
 	<body>
-		<Navigation />
+		<Header />
 		{remodeling ? <RemodelingNotice/> : <h1>Webiste will be here</h1>}
 	</body>
 </html>
