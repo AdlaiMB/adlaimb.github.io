@@ -4,6 +4,7 @@ import PortfolioLayout from "../layouts/PortfolioLayout.astro";
 import Introduction from "../components/Introduction.astro";
 import About from "../components/About.astro";
 import Skills from "../components/Skills.astro";
+import Knowledge from "../components/Knowledge.astro";
 import '../styles/global.css'
 const remodeling = false;
 ---
@@ -19,7 +20,7 @@ const remodeling = false;
 		<title>adlaimb's portfolio</title>
 	</head>
 	<body>
-		{remodeling ? <RemodelingNotice/> : <PortfolioLayout><Introduction/><About/><Skills/></PortfolioLayout>}
+		{remodeling ? <RemodelingNotice/> : <PortfolioLayout><Introduction/><About/><Skills/><Knowledge/></PortfolioLayout>}
 		{!remodeling && <script> 
 			import "../scripts/menu.js"
 		</script>}
