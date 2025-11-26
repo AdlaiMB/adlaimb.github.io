@@ -11,9 +11,28 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
 }
 
 header nav {
+  flex-basis: 100%;
+  display: none;
   margin: auto;
   width: 70%;
+}
+
+header button {
+  margin-left: auto;
+  display: block;
+}
+
+@media screen and (min-width: 636px) {
+  header nav {
+    flex-basis: auto;
+    display: block;
+  }
+
+  header button {
+    display: none;
+  }
 }
