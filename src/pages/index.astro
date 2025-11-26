@@ -1,6 +1,7 @@
 ---
 import RemodelingNotice from "../components/RemodelingNotice.astro"
 import Header from "../components/Header.astro"
+import Introduction from "../components/Introduction.astro"
 import '../styles/global.css'
 const remodeling = true;
 ---
@@ -17,6 +18,7 @@ const remodeling = true;
 	</head>
 	<body>
 		<Header />
+		<Introduction />
 		{remodeling ? <RemodelingNotice/> : <h1>Webiste will be here</h1>}
 		<script> 
 			import "../scripts/menu.js"
