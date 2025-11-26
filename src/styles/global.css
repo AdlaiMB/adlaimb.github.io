@@ -9,11 +9,6 @@ body {
   }
 }
 
-header {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 header nav {
   flex-basis: 100%;
   display: none;
