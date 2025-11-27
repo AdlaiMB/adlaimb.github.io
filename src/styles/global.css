@@ -40,6 +40,8 @@ header button {
 }
 
 #portfolio-layout-content-container {
+  display: grid;
+  grid-template-columns: 1fr;
   margin: var(--site-margin);
 }
 
