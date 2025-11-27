@@ -6,6 +6,27 @@ body {
   background-color: white;
 }
 
+h1 {
+  line-height: 1.15;
+  font-size: 2.986rem;
+}
+
+h2 {
+  line-height: 1.2;
+  font-size: 2.488rem;
+}
+
+h3 {
+  line-height: 1.2;
+  font-size: 2.074rem;
+}
+
+p,
+li {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
