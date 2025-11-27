@@ -2,6 +2,10 @@
   --site-guard-rail: 0 16px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
 }
