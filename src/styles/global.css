@@ -65,6 +65,8 @@ header nav {
 .nav-link {
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 header button {
