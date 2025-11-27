@@ -40,7 +40,7 @@ header button {
 }
 
 #portfolio-layout-content-container {
-  margin: 0 16px;
+  margin: var(--site-margin);
 }
 
 @media screen and (min-width: 636px) {
@@ -60,20 +60,12 @@ header button {
 }
 
 @media screen and (min-width: 744px) {
-  #portfolio-layout-content-container {
-    margin: 0 32px;
-  }
-
   :root {
     --site-margin: 0 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  #portfolio-layout-content-container {
-    margin: 0 160px;
-  }
-
   :root {
     --site-margin: 0 160px;
   }
