@@ -1,3 +1,7 @@
+:root {
+  --site-margin: 0 16px;
+}
+
 body {
   background-color: white;
 }
@@ -7,6 +11,10 @@ body {
     background-color: black;
     color: white;
   }
+}
+
+header {
+  padding: var(--site-margin);
 }
 
 header nav {
@@ -55,10 +63,18 @@ header button {
   #portfolio-layout-content-container {
     margin: 0 32px;
   }
+
+  :root {
+    --site-margin: 0 32px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   #portfolio-layout-content-container {
     margin: 0 160px;
+  }
+
+  :root {
+    --site-margin: 0 160px;
   }
 }
