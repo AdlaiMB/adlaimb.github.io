@@ -31,13 +31,6 @@ li {
   font-size: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-    color: white;
-  }
-}
-
 header {
   width: stretch;
   position: fixed;
@@ -46,6 +39,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   padding: var(--site-guard-rail);
+  background-color: #f7f7f7;
+  padding-block: 1rem;
 }
 
 header nav {
@@ -112,5 +107,16 @@ header button {
 @media screen and (min-width: 1440px) {
   :root {
     --site-guard-rail: 0 160px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  header {
+    background-color: #202427;
   }
 }
