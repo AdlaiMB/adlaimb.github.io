@@ -1,5 +1,5 @@
 :root {
-  --site-margin: 0 16px;
+  --site-guard-rail: 0 16px;
 }
 
 body {
@@ -20,7 +20,7 @@ header {
   z-index: 1;
   display: flex;
   flex-wrap: wrap;
-  padding: var(--site-margin);
+  padding: var(--site-guard-rail);
 }
 
 header nav {
@@ -59,7 +59,7 @@ header button {
 #portfolio-layout-content-container {
   display: grid;
   grid-template-columns: 1fr;
-  margin: var(--site-margin);
+  margin: var(--site-guard-rail);
 }
 
 @media screen and (min-width: 636px) {
@@ -80,12 +80,12 @@ header button {
 
 @media screen and (min-width: 744px) {
   :root {
-    --site-margin: 0 32px;
+    --site-guard-rail: 0 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   :root {
-    --site-margin: 0 160px;
+    --site-guard-rail: 0 160px;
   }
 }
