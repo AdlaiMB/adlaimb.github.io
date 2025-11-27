@@ -31,6 +31,10 @@ header button {
   display: unset;
 }
 
+#portfolio-layout-content-container {
+  margin: 0 16px;
+}
+
 @media screen and (min-width: 636px) {
   header nav {
     flex-basis: auto;
@@ -44,5 +48,17 @@ header button {
 
   header button {
     display: none;
+  }
+}
+
+@media screen and (min-width: 744px) {
+  #portfolio-layout-content-container {
+    margin: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #portfolio-layout-content-container {
+    margin: 0 160px;
   }
 }
