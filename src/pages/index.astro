@@ -1,35 +1,16 @@
 ---
-import RemodelingNotice from "../components/RemodelingNotice.astro";
-import PortfolioLayout from "../layouts/PortfolioLayout.astro";
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NoticeLayout from '../layouts/NoticeLayout.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import RemodelingNotice from '../components/RemodelingNotice.astro';
 import Introduction from "../components/Introduction.astro";
 import About from "../components/About.astro";
 import Skills from "../components/Skills.astro";
 import Coursework from "../components/Coursework.astro";
 import Projects from "../components/Projects.astro";
-import '../styles/global.css'
-const remodeling = false;
+const isRemodeling = true;
 ---
 
-<!-- TODO: why is it type="svg+xml"? -->
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/Personal-Website/logo.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>adlaimb's portfolio</title>
-	</head>
-	<body>
-		{remodeling ? <RemodelingNotice/> : <PortfolioLayout><Introduction/><About/><Skills/><Coursework/><Projects/></PortfolioLayout>}
-		{!remodeling && <script> 
-			import "../scripts/menu.js"
-		</script>}
-	</body>
-</html>
-
-<style>
-	body {
-		margin: 0;
-	}
-</style>
+<BaseLayout pageTitle="adlai's portfolio">
+	{isRemodeling ? <NoticeLayout><RemodelingNotice/></NoticeLayout> : <SiteLayout><Introduction/><About/><Skills/><Coursework/><Projects/></SiteLayout>}
+</BaseLayout>

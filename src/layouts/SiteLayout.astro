@@ -1,0 +1,13 @@
+---
+import GuardrailLayout from './GuardrailLayout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Header/>
+<GuardrailLayout>
+    <slot/>
+</GuardrailLayout>
+
+<script>
+    import "../scripts/menu.js"
+</script>
