@@ -102,7 +102,7 @@ header button {
   display: unset;
 }
 
-#portfolio-layout-content-container {
+#guardrail-container {
   display: grid;
   grid-template-columns: 1fr;
   margin: var(--site-guard-rail);
