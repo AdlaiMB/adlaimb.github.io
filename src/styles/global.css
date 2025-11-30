@@ -52,7 +52,7 @@ a {
 
 p,
 li {
-  font-weight: 400;
+  font-weight: 350;
 }
 
 a {
@@ -153,11 +153,11 @@ header button {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: black;
+    background-color: #131313;
     color: white;
   }
 
   header {
-    background-color: #202427;
+    background-color: #000000;
   }
 }
