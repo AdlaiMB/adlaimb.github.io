@@ -15,7 +15,7 @@
 }
 
 :root {
-  --site-guard-rail: 0 16px;
+  --site-guard-rail: 16px;
   --primary-font: "Shippori Mincho";
   --secondary-font: "Roboto";
 }
@@ -80,7 +80,7 @@ header {
   z-index: 1;
   display: flex;
   flex-wrap: wrap;
-  padding: var(--site-guard-rail);
+  padding-inline: var(--site-guard-rail);
   background-color: #f7f7f7;
   padding-block: 1rem;
 }
@@ -119,7 +119,7 @@ header button {
 #guardrail-container {
   display: grid;
   grid-template-columns: 1fr;
-  margin: var(--site-guard-rail);
+  margin-inline: var(--site-guard-rail);
 }
 
 @media screen and (min-width: 636px) {
@@ -141,13 +141,13 @@ header button {
 
 @media screen and (min-width: 744px) {
   :root {
-    --site-guard-rail: 0 32px;
+    --site-guard-rail: 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   :root {
-    --site-guard-rail: 0 160px;
+    --site-guard-rail: 160px;
   }
 }
 
