@@ -115,6 +115,7 @@ header nav {
 
 header button {
   margin-left: auto;
+  padding: 1.2rem 0.5rem;
   display: block;
 }
 
