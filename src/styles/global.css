@@ -74,16 +74,15 @@ a {
 }
 
 header {
-  width: stretch;
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: 1rem;
   z-index: 1;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   background-color: #f7f7f7;
-  padding-inline: var(--site-guard-rail);
-  padding-block: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
 }
 
 header > * {
@@ -97,11 +96,10 @@ header nav {
 
 #nav-items {
   padding: 0;
-  margin: 0;
+  margin: 1rem 0 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .nav-item {
@@ -109,8 +107,18 @@ header nav {
 }
 
 .nav-link {
+  display: inline-block;
+  box-sizing: border-box;
   color: white;
+  width: 100%;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
   text-decoration: none;
+  transition: background-color 0.1s linear;
+}
+
+.nav-link:hover {
+  background-color: #1a1a1a;
 }
 
 header button {
@@ -138,7 +146,8 @@ header button {
 
   #nav-items {
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
+    margin: 0;
   }
 
   header button {
