@@ -121,10 +121,12 @@ header nav {
   background-color: #1a1a1a;
 }
 
-header button {
+#menu {
   margin-left: auto;
-  padding: 1.2rem 0.5rem;
-  display: block;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 :has(#menu[aria-expanded="true"]) header nav {
@@ -150,7 +152,7 @@ header button {
     margin: 0;
   }
 
-  header button {
+  #menu {
     display: none;
   }
 }

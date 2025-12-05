@@ -2,11 +2,12 @@
 import Navigation from "./Navigation.astro"
 const imageFilePath = '/Personal-Website/logo.svg';
 const imageAltText = 'personal logo';
+const hamburgerIconFilePath = '/Personal-Website/icons/hamburger.svg';
 const imageSize = 32;
 ---
 
 <header>
     <a href="#introduction"><img src={imageFilePath} width={imageSize} height={imageSize} alt={imageAltText} /></a>
-    <button aria-expanded="false" id="menu">menu</button>
+    <button aria-expanded="false" id="menu"><img src={hamburgerIconFilePath} alt="menu icon"/></button>
     <Navigation />
 </header>
