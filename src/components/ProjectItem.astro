@@ -1,0 +1,17 @@
+---
+const {name, description, links, tools } = Astro.props;
+---
+
+<article class="project-item">
+    <h3>{name}</h3>
+    <nav>
+        <ul class="project-item-list">
+            {links.map((link: any) => <li class="project-item-list-item"><a class="project-item-link" href={link.url}>{link.name}</a></li>)}
+        </ul>
+    </nav>
+    <p>{description}</p>
+    <ul class="project-item-list">
+        <li class="project-item-list-item">tools:</li>
+        {tools.map((tool: any) => <li class="project-item-list-item">{tool}</li>)}
+    </ul>
+</article>
