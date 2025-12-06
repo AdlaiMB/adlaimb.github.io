@@ -35,6 +35,7 @@ h1 {
   text-underline-offset: 8%;
   text-decoration-thickness: 4%;
   text-decoration-color: #b12a2e;
+  margin-block: 0 1rem;
 }
 
 h2 {
@@ -153,9 +154,14 @@ header nav {
   border-bottom: 1px solid #363535;
 }
 
+#introduction section {
+  max-width: 80ch;
+}
+
 #introduction img {
   display: none;
   max-width: 784px;
+  width: 55%;
   height: auto;
 }
 
@@ -215,7 +221,6 @@ header nav {
 
   #introduction img {
     display: inline-block;
-    width: 55%;
   }
 
   #about-me {
