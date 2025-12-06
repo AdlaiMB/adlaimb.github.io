@@ -1,0 +1,11 @@
+---
+const imageFilePath = "/Personal-Website/icons/arrow.svg";
+const imageHeight = 14;
+const imageWidth = 13;
+const { skill } = Astro.props;
+---
+
+<li class="skill-item">
+    <img src={imageFilePath} width={imageWidth} height={imageHeight}/>
+    {skill}
+</li>
