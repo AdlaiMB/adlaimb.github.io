@@ -1,19 +1,15 @@
+---
+const imageFilePath = '/Personal-Website/images/introduction.svg';
+const imageAltText = 'introduction';
+---
+
 <div id="introduction">
     <section>
         <h1>Hello, I'm Adlai Morales-Bravo</h1>
         <p>
-            I'm a Computer Science graduate from the University of California, Riverisde. <br/>
-            I'm actively looking for entry level software engineering roles.
+            I'm a Computer Science graduate from the University of California, Riverisde.<br/>
+            I'm actively looking for junior level full-stack software engineering roles.
         </p>
     </section>
+    <img src={imageFilePath} alt={imageAltText}/>
 </div>
-
-<style>
-    div {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
