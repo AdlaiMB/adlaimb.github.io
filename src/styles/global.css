@@ -217,6 +217,27 @@ header nav {
   border-radius: 0.25rem;
 }
 
+.coursework-item {
+  list-style: none;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 0.25rem;
+}
+
+#coursework {
+  width: 100%;
+  padding-block: 6rem;
+  border-bottom: 1px solid #363535;
+}
+
+#coursework-items {
+  margin-top: 2rem;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
+}
+
 @media screen and (min-width: 636px) {
   header nav {
     flex-basis: auto;
@@ -239,6 +260,10 @@ header nav {
   :root {
     --site-guard-rail: 32px;
   }
+
+  #coursework-items {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -258,6 +283,10 @@ header nav {
   #about-me {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  #coursework-items {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
