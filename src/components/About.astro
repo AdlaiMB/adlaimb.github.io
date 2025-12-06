@@ -1,3 +1,8 @@
+---
+const desktopImageFilePath = '/Personal-Website/images/about.svg';
+const imageAltText = 'about';
+---
+
 <div id="about-me">
     <section>
         <h2>About Me</h2>
@@ -7,18 +12,5 @@
             Outside of computer science and software development I enjoy reading books, watching movies/shows, working out, and listening to music.
         </p>
     </section>
+    <img src={desktopImageFilePath} alt={imageAltText} />
 </div>
-
-<style>
-    div {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    section {
-        width: 50%;
-    }
-</style>
