@@ -47,6 +47,13 @@ h2 {
 h3 {
   line-height: 1.2;
   font-size: 2.074rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.728rem;
+  line-height: 1.2;
+  margin: 0;
 }
 
 p,
@@ -54,6 +61,7 @@ li,
 a {
   line-height: 1.6;
   font-size: 1rem;
+  margin: 0;
 }
 
 p,
@@ -61,7 +69,8 @@ li {
   font-weight: 350;
 }
 
-a {
+a,
+h4 {
   font-weight: 700;
 }
 
@@ -74,9 +83,16 @@ h2 {
 p,
 li,
 a,
-h3 {
+h3,
+h4 {
   font-family: var(--secondary-font);
   font-stretch: 100%;
+}
+
+.font-small {
+  line-height: 1.5;
+  font-size: 0.833rem;
+  margin: 0;
 }
 
 header {
@@ -293,6 +309,19 @@ header nav {
   border: 1px solid white;
   padding: 0.5rem;
   border-radius: 0.25rem;
+}
+
+footer {
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 636px) {
