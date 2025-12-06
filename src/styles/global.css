@@ -182,6 +182,7 @@ header nav {
 }
 
 #about-me {
+  scroll-margin-top: 4rem;
   width: 100%;
   padding-block: 3rem;
   display: flex;
@@ -202,6 +203,7 @@ header nav {
 }
 
 #skills {
+  scroll-margin-top: 4rem;
   width: 100%;
   margin: 0 auto;
   padding-block: 6rem;
@@ -241,6 +243,7 @@ header nav {
 }
 
 #coursework {
+  scroll-margin-top: 4rem;
   width: 100%;
   padding-block: 6rem;
   border-bottom: 1px solid #363535;
@@ -255,6 +258,7 @@ header nav {
 }
 
 #projects {
+  scroll-margin-top: 4rem;
   padding-block: 4rem;
   border-bottom: 1px solid #363535;
 }
