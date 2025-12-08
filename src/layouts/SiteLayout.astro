@@ -2,8 +2,11 @@
 import GuardrailLayout from './GuardrailLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ThemeButton from '../components/ThemeButton.astro';
 ---
 
+
+<ThemeButton/>
 <GuardrailLayout>
     <Header/>
     <slot/>
@@ -13,4 +16,5 @@ import Footer from '../components/Footer.astro';
 
 <script>
     import "../scripts/menu.js"
+    import "../scripts/theme.js"
 </script>

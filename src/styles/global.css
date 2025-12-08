@@ -18,6 +18,13 @@
   --site-guard-rail: 16px;
   --primary-font: "Shippori Mincho";
   --secondary-font: "Roboto";
+  --font-color: white;
+  --background-color: #131313;
+  --header-background-color: #000000;
+  --header-nav-hover-background-color: #141414;
+  --border-bottom-color: #363535;
+  --card-background-color: #1a1a1a;
+  --svg-color: white;
 }
 
 html {
@@ -25,7 +32,8 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: var(--background-color);
+  color: var(--font-color);
 }
 
 h1 {
@@ -96,13 +104,13 @@ h4 {
 }
 
 header {
+  background-color: var(--header-background-color);
   position: sticky;
   top: 1rem;
   z-index: 1;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #f7f7f7;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
 }
@@ -131,7 +139,7 @@ header nav {
 .nav-link {
   display: inline-block;
   box-sizing: border-box;
-  color: white;
+  color: var(--font-color);
   width: 100%;
   border-radius: 0.25rem;
   padding: 0.5rem;
@@ -140,7 +148,7 @@ header nav {
 }
 
 .nav-link:hover {
-  background-color: #1a1a1a;
+  background-color: var(--header-nav-hover-background-color);
 }
 
 #menu {
@@ -167,7 +175,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #363535;
+  border-bottom: 1px solid var(--border-bottom-color);
 }
 
 #introduction section {
@@ -176,7 +184,7 @@ header nav {
 
 #introduction a {
   font-variant: small-caps;
-  color: white;
+  color: var(--font-color);
 }
 
 #introduction img {
@@ -194,7 +202,7 @@ header nav {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #363535;
+  border-bottom: 1px solid var(--border-bottom-color);
   gap: 2rem;
 }
 
@@ -212,7 +220,7 @@ header nav {
   width: 100%;
   margin: 0 auto;
   padding-block: 6rem;
-  border-bottom: 1px solid #363535;
+  border-bottom: 1px solid var(--border-bottom-color);
 }
 
 #skills section {
@@ -236,14 +244,14 @@ header nav {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background-color: #1a1a1a;
+  background-color: var(--card-background-color);
   border-radius: 0.25rem;
 }
 
 .coursework-item {
   list-style: none;
   padding: 1rem;
-  background-color: #1a1a1a;
+  background-color: var(--card-background-color);
   border-radius: 0.25rem;
 }
 
@@ -251,7 +259,7 @@ header nav {
   scroll-margin-top: 4rem;
   width: 100%;
   padding-block: 6rem;
-  border-bottom: 1px solid #363535;
+  border-bottom: 1px solid var(--border-bottom-color);
 }
 
 #coursework-items {
@@ -265,7 +273,7 @@ header nav {
 #projects {
   scroll-margin-top: 4rem;
   padding-block: 4rem;
-  border-bottom: 1px solid #363535;
+  border-bottom: 1px solid var(--border-bottom-color);
 }
 
 #projects section {
@@ -286,7 +294,7 @@ header nav {
 }
 
 .project-item {
-  background-color: #1a1a1a;
+  background-color: var(--card-background-color);
   padding: 1rem;
   border-radius: 0.5rem;
   display: flex;
@@ -311,11 +319,11 @@ header nav {
 
 .project-item-link {
   display: inline-block;
-  color: white;
+  color: var(--font-color);
   text-decoration: none;
   font-variant: small-caps;
   font-weight: 400;
-  border: 1px solid white;
+  border: 1px solid var(--font-color);
   padding: 0.5rem;
   border-radius: 0.25rem;
 }
@@ -331,6 +339,50 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#theme-button {
+  cursor: pointer;
+  position: fixed;
+  bottom: 4rem;
+  right: var(--site-guard-rail);
+  border: none;
+  width: 3.625rem;
+  height: 3.625rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-background-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#arrow-svg path {
+  stroke: var(--svg-color);
+}
+
+#logo-svg rect {
+  stroke: var(--svg-color);
+}
+
+#logo-svg path {
+  fill: var(--svg-color);
+}
+
+#hamburger-svg line {
+  stroke: var(--svg-color);
+}
+
+#moon-icon {
+  display: none;
+}
+
+.light #sun-icon {
+  display: none;
+}
+
+.light #moon-icon {
+  display: block;
 }
 
 @media screen and (min-width: 636px) {
@@ -389,13 +441,12 @@ footer {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #131313;
-    color: white;
-  }
-
-  header {
-    background-color: #000000;
-  }
+html.light {
+  --font-color: black;
+  --background-color: white;
+  --header-background-color: #efefef;
+  --header-nav-hover-background-color: white;
+  --border-bottom-color: #dedede;
+  --card-background-color: #efefef;
+  --svg-color: black;
 }
