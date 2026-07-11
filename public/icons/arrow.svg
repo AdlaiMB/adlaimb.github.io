@@ -1,9 +1,0 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0.474121 14.8805L13.4741 7.88049L0.474121 0.880493" stroke="black" stroke-width="2"/>
-    <style>
-        path { stroke: #000; }
-        @media (prefers-color-scheme: dark) {
-            path { stroke: #FFF; }
-        }
-    </style>
-</svg>
