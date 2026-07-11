@@ -1,0 +1,23 @@
+:root {
+  --root-webpage-layout-padding-horizontal: 1rem;
+  --root-webpage-layout-padding-vertical: 0;
+}
+
+.webpage-root-layout-guide {
+  margin-inline: auto;
+  max-width: 1440px;
+  padding: var(--root-webpage-layout-padding-vertical)
+    var(--root-webpage-layout-padding-horizontal);
+}
+
+@media screen and (width >= 834px) {
+  :root {
+    --root-webpage-layout-padding-horizontal: 2rem;
+  }
+}
+
+@media screen and (width >= 1440px) {
+  :root {
+    --root-webpage-layout-padding-horizontal: 10rem;
+  }
+}

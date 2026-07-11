@@ -1,5 +1,6 @@
 ---
 import "../styles/reset.css";
+import WebPageRootLayout from "../components/layouts/WebPageRootLayout.astro";
 
 const baseVisualMediaAssetsPath = "/Personal-Website/";
 const logoPath = baseVisualMediaAssetsPath + "logo.svg";
@@ -17,6 +18,8 @@ const logoPath = baseVisualMediaAssetsPath + "logo.svg";
 		<title>adlai's portfolio</title>
 	</head>
 	<body>
-		<p>reconstructing adlai's portfolio.</p>
+		<WebPageRootLayout>
+			<p>reconstructing adlai's portfolio.</p>
+		</WebPageRootLayout>
 	</body>
 </html>
