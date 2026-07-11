@@ -1,16 +1,12 @@
----
-import BaseLayout from '../layouts/BaseLayout.astro';
-import NoticeLayout from '../layouts/NoticeLayout.astro';
-import SiteLayout from '../layouts/SiteLayout.astro';
-import RemodelingNotice from '../components/RemodelingNotice.astro';
-import Introduction from "../components/Introduction.astro";
-import About from "../components/About.astro";
-import Skills from "../components/Skills.astro";
-import Coursework from "../components/Coursework.astro";
-import Projects from "../components/Projects.astro";
-const isRemodeling = false;
----
-
-<BaseLayout pageTitle="adlai's portfolio">
-	{isRemodeling ? <NoticeLayout><RemodelingNotice/></NoticeLayout> : <SiteLayout><Introduction/><About/><Skills/><Coursework/><Projects/></SiteLayout>}
-</BaseLayout>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<title>adlai's portfolio</title>
+	</head>
+	<body>
+		<p>reconstructing adlai's portfolio.</p>
+	</body>
+</html>
