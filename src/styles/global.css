@@ -1,0 +1,18 @@
+:root {
+  --color-scheme-text: white;
+  --color-scheme-background: #131313;
+  --color-scheme-primary: black;
+  --color-scheme-secondary: #0d0d0d;
+  --color-scheme-tertiary: #363535;
+  --color-scheme-primary-accent: #b12a2e;
+  --color-scheme-secondary-accent: #2f78d8;
+}
+
+a,
+p {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}

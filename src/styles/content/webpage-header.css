@@ -1,0 +1,117 @@
+/* apply the color properties separately from layout properties */
+
+/* color properties */
+#webpage-header {
+  background-color: var(--color-scheme-primary);
+}
+
+#webpage-header-logo rect {
+  stroke: var(--color-scheme-text);
+}
+
+#webpage-header-logo path {
+  fill: var(--color-scheme-text);
+}
+
+#webpage-header-navigation-drop-down-button-open,
+#webpage-header-navigation-drop-down-button-close {
+  stroke: var(--color-scheme-text);
+}
+
+#webpage-header-navigation {
+  background-color: var(--color-scheme-primary);
+}
+
+.webpage-header-navigation-link {
+  color: var(--color-scheme-text);
+  border-bottom: 1px solid var(--color-scheme-tertiary);
+}
+
+#webpage-header-navigation-drop-down-button,
+.webpage-header-navigation-link {
+  transition: background-color 0.1s linear;
+}
+
+#webpage-header-navigation-drop-down-button:hover {
+  background-color: var(--color-scheme-tertiary);
+}
+
+.webpage-header-navigation-link:hover {
+  background-color: var(--color-scheme-tertiary);
+}
+
+/* layout properties */
+#webpage-header {
+  position: relative;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#webpage-header-navigation-drop-down-button {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:has(#webpage-header-navigation-drop-down-button[aria-expanded="true"])
+  #webpage-header-navigation-drop-down-button-open {
+  display: none;
+}
+
+:has(#webpage-header-navigation-drop-down-button[aria-expanded="false"])
+  #webpage-header-navigation-drop-down-button-close {
+  display: none;
+}
+
+:has(#webpage-header-navigation-drop-down-button[aria-expanded="true"])
+  #webpage-header-navigation {
+  display: unset;
+}
+
+#webpage-header-navigation {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  width: 50%;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+#webpage-header-navigation-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.webpage-header-navigation-link {
+  text-transform: capitalize;
+  padding: 1rem;
+}
+
+@media screen and (width >= 834px) {
+  #webpage-header-navigation-drop-down-button {
+    display: none;
+  }
+
+  #webpage-header-navigation {
+    width: fit-content;
+    display: block;
+    position: static;
+  }
+
+  #webpage-header-navigation-links {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .webpage-header-navigation-link {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border-bottom: 0;
+  }
+}
