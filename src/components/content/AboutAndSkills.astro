@@ -8,9 +8,11 @@ const aboutLgImgPath = baseVisualMediaAssetsPath + "images/about-lg.svg";
 const imageAlt = "about and skills"
 
 const skills = ["C", "C++", "Python", "PostgreSQL", "JavaScript", "React", "HTML", "CSS", "Git", "GitHub"];
+
+const { id } = Astro.props;
 ---
 
-<div id="about-skills-container">
+<div id={id} class="about-skills-section">
     <img id="about-img-sm" src={aboutSmImgPath} alt={imageAlt} />
     <img id="about-img-md" src={aboutMdImgPath} alt={imageAlt} />
     <div id="about-skills-text-container">

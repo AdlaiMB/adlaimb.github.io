@@ -10,6 +10,18 @@ import Projects from "../components/content/Projects.astro";
 
 const baseVisualMediaAssetsPath = "/Personal-Website/";
 const logoPath = baseVisualMediaAssetsPath + "logo.svg";
+const pageContent = [
+	{id: "introduction-section", linkNames: ["introduction"], component: Introduction,},
+	{id: "about-skills-section", linkNames: ["about", "skills"], component: AboutAndSkills},
+	{id: "projects-section", linkNames: ["projects"], component: Projects}
+];
+const headerLinks = [];
+pageContent.forEach(content => {
+	const fragment = `#${content.id}`;
+	content.linkNames.forEach(linkName => {
+		headerLinks.push({fragment, linkName})
+	})
+});
 ---
 
 <html lang="en">
@@ -25,10 +37,8 @@ const logoPath = baseVisualMediaAssetsPath + "logo.svg";
 	</head>
 	<body>
 		<WebPageRootLayout>
-			<Header />
-			<Introduction />
-			<AboutAndSkills />
-			<Projects />
+			<Header links={headerLinks}/>
+			{pageContent.map(content => <content.component id={content.id}/>)}
 			<Footer />
 		</WebPageRootLayout>
 	</body>

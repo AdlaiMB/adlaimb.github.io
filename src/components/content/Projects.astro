@@ -20,10 +20,12 @@ const projects = [
         description: "A database-driven application for managing user accounts, stores, products, and orders.", 
         tools: ["Java", "PostgreSQL"]
     },
-]
+];
+
+const { id } = Astro.props;
 ---
 
-<div id="projects-section">
+<div id={id} class="projects-section">
     <h2 id="projects-title" class="text-underline">projects</h2>
     <ol id="carousel">
         {projects.map(project => 

@@ -1,7 +1,7 @@
 /* apply the color properties separately from layout properties */
 
 /* color properties */
-#about-skills-container {
+.about-skills-section {
   border-bottom: 1px solid var(--color-scheme-tertiary);
 }
 
@@ -17,7 +17,7 @@
 }
 
 /* layout properties */
-#about-skills-container {
+.about-skills-section {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@
 }
 
 @media screen and (width >= 1440px) {
-  #about-skills-container {
+  .about-skills-section {
     flex-direction: row;
     align-items: center;
     gap: 3rem;

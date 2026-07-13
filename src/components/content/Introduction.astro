@@ -6,9 +6,11 @@ const introductionSmImgPath = baseVisualMediaAssetsPath + "images/introduction-s
 const introductionMdImgPath = baseVisualMediaAssetsPath + "images/introduction-md.svg";
 const introductionLgImgPath = baseVisualMediaAssetsPath + "images/introduction-lg.svg";
 const imageAlt = "introduction";
+
+const { id } = Astro.props;
 ---
 
-<div id="introduction-section">
+<div id={id} class="introduction-section">
     <img id="introduction-img-sm" src={introductionSmImgPath} alt={imageAlt}/>
     <img id="introduction-img-md" src={introductionMdImgPath} alt={imageAlt}/>
     <section>
