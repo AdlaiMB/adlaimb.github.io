@@ -1,0 +1,29 @@
+#webpage-footer {
+  color: var(--color-scheme-text);
+}
+
+#webpage-footer {
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+#signature-message {
+  display: flex;
+  flex-direction: column;
+}
+
+#signature {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 1.0625rem;
+  line-height: 1;
+}
+
+#copyright-message {
+  text-align: center;
+  font-size: 0.8125rem;
+  line-height: 1;
+  letter-spacing: 1%;
+}
