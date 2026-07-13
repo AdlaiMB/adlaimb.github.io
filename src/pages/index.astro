@@ -3,6 +3,7 @@ import "../styles/reset.css";
 import "../styles/global.css"
 import WebPageRootLayout from "../components/layouts/WebPageRootLayout.astro";
 import Header from "../components/content/Header.astro";
+import Introduction from "../components/content/Introduction.astro";
 
 const baseVisualMediaAssetsPath = "/Personal-Website/";
 const logoPath = baseVisualMediaAssetsPath + "logo.svg";
@@ -22,7 +23,7 @@ const logoPath = baseVisualMediaAssetsPath + "logo.svg";
 	<body>
 		<WebPageRootLayout>
 			<Header/>
-			<p>reconstructing adlai's portfolio.</p>
+			<Introduction />
 		</WebPageRootLayout>
 	</body>
 </html>

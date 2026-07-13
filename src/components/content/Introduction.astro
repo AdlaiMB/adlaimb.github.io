@@ -1,0 +1,22 @@
+---
+import "../../styles/content/introduction-section.css";
+
+const baseVisualMediaAssetsPath = "/Personal-Website/";
+const introductionSmImgPath = baseVisualMediaAssetsPath + "images/introduction-sm.svg";
+const introductionMdImgPath = baseVisualMediaAssetsPath + "images/introduction-md.svg";
+const introductionLgImgPath = baseVisualMediaAssetsPath + "images/introduction-lg.svg";
+const imageAlt = "introduction";
+---
+
+<div id="introduction-section">
+    <img id="introduction-img-sm" src={introductionSmImgPath} alt={imageAlt}/>
+    <img id="introduction-img-md" src={introductionMdImgPath} alt={imageAlt}/>
+    <section>
+        <h1 id="introduction-title" class="text-underline">hello, i'm adlai morales-bravo</h1>
+        <p id="introduction-body">
+            I'm a Computer Science graduate from the University of California, Riverside.
+            I'm actively looking for entry level full-stack software engineering roles.
+        </p>
+    </section>
+    <img id="introduction-img-lg" src={introductionLgImgPath} alt={imageAlt} />
+</div>
