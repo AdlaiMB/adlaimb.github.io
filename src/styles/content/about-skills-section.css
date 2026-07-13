@@ -1,0 +1,75 @@
+/* apply the color properties separately from layout properties */
+
+/* color properties */
+#about-skills-container {
+  border-bottom: 1px solid var(--color-scheme-tertiary);
+}
+
+#about-title,
+#about-body,
+#skills-title {
+  color: var(--color-scheme-text);
+}
+
+.skill {
+  background-color: var(--color-scheme-secondary);
+  color: var(--color-scheme-text);
+}
+
+/* layout properties */
+#about-skills-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-block: 2.5rem;
+}
+
+#about-skills-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.skill {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+#about-img-md,
+#about-img-lg {
+  display: none;
+}
+
+@media screen and (width >= 834px) {
+  #about-img-sm {
+    display: none;
+  }
+
+  #about-img-md {
+    display: initial;
+  }
+}
+
+@media screen and (width >= 1440px) {
+  #about-skills-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  #about-img-md {
+    display: none;
+  }
+
+  #about-img-lg {
+    display: initial;
+    height: 195px;
+  }
+}

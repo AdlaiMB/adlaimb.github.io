@@ -1,0 +1,31 @@
+---
+import "../../styles/content/about-skills-section.css";
+
+const baseVisualMediaAssetsPath = "/Personal-Website/";
+const aboutSmImgPath = baseVisualMediaAssetsPath + "images/about-sm.svg";
+const aboutMdImgPath = baseVisualMediaAssetsPath + "images/about-md.svg";
+const aboutLgImgPath = baseVisualMediaAssetsPath + "images/about-lg.svg";
+const imageAlt = "about and skills"
+
+const skills = ["C", "C++", "Python", "PostgreSQL", "JavaScript", "React", "HTML", "CSS", "Git", "GitHub"];
+---
+
+<div id="about-skills-container">
+    <img id="about-img-sm" src={aboutSmImgPath} alt={imageAlt} />
+    <img id="about-img-md" src={aboutMdImgPath} alt={imageAlt} />
+    <div id="about-skills-text-container">
+        <section>
+            <h2 id="about-title" class="text-underline">about</h2>
+            <p id="about-body" class="multi-line-text">
+                I'm currently refining my skills in full-stack development and exploring new technologies. I'm interested in various areas of computer science, including discrete mathematics, operating systems, databases, and finite automata; specifically how these concepts apply to real-world software development problems. Outside of computer science and software development I enjoy reading books, watching movies/shows, working out, and listening to music.
+            </p>
+        </section>
+        <section>
+            <h3 id="skills-title" class="text-underline">skills</h3>
+            <ul id="skills-list">
+                {skills.map(skill => <li><div class="skill"><p>{skill}</p></div></li>)}
+            </ul>
+        </section>
+    </div>
+    <img id="about-img-lg" src={aboutLgImgPath} alt={imageAlt} />
+</div>
