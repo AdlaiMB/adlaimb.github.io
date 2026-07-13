@@ -8,6 +8,10 @@
   --color-scheme-secondary-accent: #2f78d8;
 }
 
+body {
+  background-color: var(--color-scheme-background);
+}
+
 h1 {
   font-family: "Shippori Mincho", serif;
   font-weight: 400;
