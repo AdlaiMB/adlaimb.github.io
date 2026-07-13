@@ -1,0 +1,45 @@
+---
+import "../../styles/content/projects-section.css";
+
+const projects = [
+    {
+        name: "chatty", 
+        gitHubUrl: "", 
+        description: "A real-time chat web app where users can create rooms, invite users to rooms, and chat with users.", 
+        tools: ["Python", "FastAPI", "PostgreSQL", "JavaScript", "React", "CSS", "Vite"]
+    },
+    {
+        name: "tomelog",
+        gitHubUrl: "", 
+        description: "A web app where users can search for their books and record their reading progress.", 
+        tools: ["JavaScript", "React", "CSS", "Vite"]
+    },
+    {
+        name: "amazon storefront DB",
+        gitHubUrl: "", 
+        description: "A database-driven application for managing user accounts, stores, products, and orders.", 
+        tools: ["Java", "PostgreSQL"]
+    },
+]
+---
+
+<div id="projects-section">
+    <h2 id="projects-title" class="text-underline">projects</h2>
+    <ol id="carousel">
+        {projects.map(project => 
+        (<li class="carousel-item">
+            <section class="project">
+                <header class="project-header">
+                    <h4 class="project-title">{project.name}</h4>
+                    <a class="project-github-link">GitHub</a>
+                </header>
+                <p class="project-body">{project.description}</p>
+                <footer class="project-footer">
+                    <p>
+                        Built with: {project.tools.map((tool, index) => index !== project.tools.length - 1 ?  `${tool}, ` : `and ${tool}.`)}
+                    </p>
+                </footer>
+            </section>
+        </li>))}
+    </ol>
+</div>

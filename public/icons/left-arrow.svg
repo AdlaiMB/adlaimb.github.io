@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M10.3984 7.7998L15.5984 13L10.3984 18.1998"
+        stroke="white"
+        stroke-width="2"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        transform="rotate(180 13 13)" />
+</svg>
