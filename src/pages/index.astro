@@ -15,6 +15,27 @@ const pageContent = [
 	{id: "about-skills-section", linkNames: ["about", "skills"], component: AboutAndSkills},
 	{id: "projects-section", linkNames: ["projects"], component: Projects}
 ];
+const projects = [
+    {
+        name: "chatty", 
+        gitHubUrl: "https://github.com/AdlaiMB/chatty", 
+        description: "A real-time chat web app where users can create rooms, invite users to rooms, and chat with users.", 
+        tools: ["Python", "FastAPI", "PostgreSQL", "JavaScript", "React", "CSS", "Vite"]
+    },
+    {
+        name: "tomelog",
+        gitHubUrl: "https://github.com/AdlaiMB/tomelog", 
+        description: "A web app where users can search for their books and record their reading progress.", 
+        tools: ["JavaScript", "React", "CSS", "Vite"]
+    },
+    {
+        name: "amazon storefront DB",
+        gitHubUrl: "https://github.com/deet5/Amazon-Storefront-DB", 
+        description: "A database-driven application for managing user accounts, stores, products, and orders.", 
+        tools: ["Java", "PostgreSQL"]
+    },
+];
+
 const headerLinks = [];
 pageContent.forEach(content => {
 	const fragment = `#${content.id}`;
@@ -38,7 +59,7 @@ pageContent.forEach(content => {
 	<body>
 		<WebPageRootLayout>
 			<Header links={headerLinks}/>
-			{pageContent.map(content => <content.component id={content.id}/>)}
+			{pageContent.map(content => content.component === Projects ? <content.component id={content.id} projects={projects}/> : <content.component id={content.id}/> )}
 			<Footer />
 		</WebPageRootLayout>
 	</body>
