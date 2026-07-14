@@ -27,6 +27,12 @@
   border-bottom: 1px solid var(--color-scheme-tertiary);
 }
 
+#webpage-header-navigation-links
+  > li:last-child
+  > .webpage-header-navigation-link {
+  border-bottom: 0;
+}
+
 #webpage-header-navigation-drop-down-button,
 .webpage-header-navigation-link {
   transition: background-color 0.1s linear;
