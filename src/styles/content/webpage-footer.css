@@ -1,7 +1,11 @@
+/* apply the color properties separately from layout properties */
+
+/* color properties */
 #webpage-footer {
   color: var(--color-scheme-text);
 }
 
+/* layout properties */
 #webpage-footer {
   padding-block: 2rem;
   display: flex;

@@ -1,3 +1,6 @@
+/* apply the color properties separately from layout properties */
+
+/* color properties */
 .projects-section {
   border-bottom: 1px solid var(--color-scheme-tertiary);
 }
@@ -43,6 +46,7 @@
   color: var(--color-scheme-text);
 }
 
+/* layout properties */
 .projects-section {
   padding-block: 2.5rem;
 }
